@@ -29,7 +29,7 @@ function nextLevel() {
             image.src = 'ogonek2.png'; // Second level image
         } else if (currentLevel === 3) {
             maxProgress = 500; // Third level
-            document.getElementById('progress').style.backgroundColor = '#f09826'; // Keep same color
+            document.getElementById('progress').style.backgroundColor = '#f026ad'; // Keep same color
             image.src = 'ogonek3.png'; // Third level image
         }
         document.getElementById('progress').style.width = '0%';

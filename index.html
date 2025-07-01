@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img id="progress-image" src="ogonek1.png" alt="Progress Image" onclick="increaseProgress()">
+        </div>
+        <div class="label-container">
+            <label id="progress-label-display">Прогресс</label>
+            <button onclick="openModal()">
+                <img src="pen.svg" alt="Edit">
+            </button>
+        </div>
+        <div class="progress-bar">
+            <div id="progress" style="width: 0%;"></div>
+        </div>
+        <div id="progress-counter">0</div>
+        <button id="next-level-button" style="display: none;" onclick="nextLevel()">></button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <h3>Дайте имя сирийчику</h3>
+            <input type="text" id="label-input" placeholder="Введите имя">
+            <button onclick="updateLabel()">Сохранить</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
